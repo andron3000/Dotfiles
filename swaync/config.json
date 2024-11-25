@@ -50,11 +50,11 @@
         "buttons-grid": {
             "actions": [
                 {
-                    "label": "󰐥",
+                    "label": "Shut down",
                     "command": "systemctl poweroff"
                 },
                 {
-                    "label": "󰜉",
+                    "label": "Restart",
                     "command": "systemctl reboot"
                 }   
             ]
