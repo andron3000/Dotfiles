@@ -22,9 +22,7 @@
 
     "memory": {
 	      "interval": 10,
-	      "format": "{used:0.1f}G/{total:0.1f}G",
-	      "format-alt": "{percentage}%",
-	      "format-alt-click": "click",
+        "format": "🖴 {:}%",
         "max-length": 10,
 	      "tooltip": true,
 	      "tooltip-format": "RAM - {used:0.1f}GB/{total:0.1f}G"
