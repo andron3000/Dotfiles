@@ -12,9 +12,9 @@
     "timeout": 10,
     "timeout-low": 5,
     "timeout-critical": 0,
-    "fit-to-screen": false,
+    "fit-to-screen": true,
     "control-center-width": 500,
-    "control-center-height": 1025,
+    "control-center-height": 1385,
     "notification-window-width": 500,
     "keyboard-shortcuts": true,
     "image-visibility": "when-available",
@@ -34,7 +34,7 @@
         "title": {
             "text": "Notification Center",
             "clear-all-button": true,
-            "button-text": "󰆴 Clear All"
+            "button-text": "Clear All"
         },
         "dnd": {
             "text": "Do Not Disturb"
