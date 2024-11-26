@@ -4,32 +4,38 @@
 sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle warp-terminal wofi
 
 ## 2. Generate personal ssh-key and add it to the Github account:
-ssh-keygen -t ed25519 -C "chekhovych1995@gmail.com"
+ssh-keygen -t ed25519 -C "chekhovych1995@gmail.com" \n
 Double check id_personal.pub file existance in ~/.ssh folder.
 
 ## 3. Clone Dotfiles repo into home directory: /home/chekhovych/Dotfiles
 git clone git@github.com:andron3000/Dotfiles.git
 
 ## 4. Bash changes:
-rm -rf ~/.bashrc
+rm -rf ~/.bashrc \n
+cd ~/Dotfiles \n
 stow bashrc
 
 ## 5. Wofi changes:
-rm -rf ~/.config/wofi
+rm -rf ~/.config/wofi \n
+cd ~/Dotfiles \n
 stow wofi
 
 ## 6. Nvim changes:
-rm -rf ~/.config/nvim
+rm -rf ~/.config/nvim \n
+cd ~/Dotfiles
 stow nvim
 
 ## 7. Swaync changes:
-rm -rf ~/.config/swaync
+rm -rf ~/.config/swaync \n
+cd ~/Dotfiles \n
 stow swaync
 
 ## 8. Waybar changes:
-rm -rf ~/.config/waybar
+rm -rf ~/.config/waybar \n
+cd ~/Dotfiles \n
 stow waybar
 
 ## 9. Hyperland changes(log in under Gnome):
-rm -rf ~/.config/hypr
+rm -rf ~/.config/hypr \n
+cd ~/Dotfiles \n
 stow hypr
