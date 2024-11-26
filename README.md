@@ -1,7 +1,13 @@
 # Setup Instructions
 
 ## 1. Install required apps:
-sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle warp-terminal wofi
+sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle hyprlock warp-terminal wofi nvim \
+
+flatpak install flathub com.google.Chrome \
+flatpak install flathub org.telegram.desktop \
+flatpak install flathub com.viber.Viber \
+flatpak install flathub com.vscodium.codium \
+flatpak install flathub com.slack.Slack \
 
 ## 2. Generate personal ssh-key and add it to the Github account:
 ssh-keygen -t ed25519 -C "chekhovych1995@gmail.com" \
