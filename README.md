@@ -22,7 +22,7 @@ stow wofi
 
 ## 6. Nvim changes:
 rm -rf ~/.config/nvim \
-cd ~/Dotfiles
+cd ~/Dotfiles \
 stow nvim
 
 ## 7. Swaync changes:
