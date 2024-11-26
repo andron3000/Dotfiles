@@ -308,7 +308,7 @@ slider {
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button label {
-  font-size: 2.5rem;
+  font-size: 1.0rem;
 }
 
 .widget-volume {
@@ -326,15 +326,6 @@ slider {
 
 .widget-backlight trough highlight {
   background: #f9e2af;
-}
-
-.widget-backlight label {
-  font-size: 1.5rem;
-  color: #f9e2af;
-}
-
-.widget-backlight .KB {
-  padding-bottom: 1rem;
 }
 
 .image {
