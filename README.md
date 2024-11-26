@@ -1,7 +1,7 @@
 # Setup Instructions
 
 ## 1. Install required apps:
-sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle warp-terminal wofi nvim \
+sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle hyprlock warp-terminal wofi nvim \
 
 flatpak install flathub com.google.Chrome \
 flatpak install flathub org.telegram.desktop \
