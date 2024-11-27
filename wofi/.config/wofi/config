@@ -1,0 +1,9 @@
+show=drun
+insensitive=true
+allow_images=true
+allow_markup=true
+print_command=true
+no_actions=true
+always_parse_args=true
+layer=overlay
+prompt=Search...
