@@ -99,12 +99,12 @@ button:hover {
     color: @overlay0;
 }
 
-#custom_notification {
+#custom-notification {
     margin-right: 12px;
     color: @overlay0;
 }
 
-#pulseaudio:hover, #cpu:hover, #memory:hover, #language:hover, #clock:hover, #clock.date:hover, #custom_notification:hover {
+#pulseaudio:hover, #cpu:hover, #memory:hover, #language:hover, #clock:hover, #clock.date:hover, #custom-notification:hover {
     color: @mauve;
 }
 
