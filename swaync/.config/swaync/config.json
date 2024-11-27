@@ -59,6 +59,16 @@
                 }   
             ]
         }
+    },
+    "notification-visibility": {
+        "telegram": {
+            "desktop-entry": "org.telegram.desktop",
+            "override-urgency": "normal"
+        },
+        "viber": {
+           "desktop-entry": "com.viber.Viber",
+           "override-urgency": "normal"
+        }
     }
 }
 
