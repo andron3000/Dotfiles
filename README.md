@@ -1,7 +1,8 @@
 
 # Setup Instructions
 
-![2024-11-30-160053_hyprshot](https://github.com/user-attachments/assets/752a6572-ab0c-4b98-ab82-37546c407ed0)
+![2024-11-30-160905_hyprshot](https://github.com/user-attachments/assets/525d6004-a27f-41de-baf3-c961bb1d36f1)
+
 
 ![2024-11-30-160319_hyprshot](https://github.com/user-attachments/assets/c2a715d8-5823-437b-bd6a-cea5085d143e)
 
