@@ -11,6 +11,10 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
 fi
 export PATH
 
+# Set Neovim as the default editor
+export EDITOR="nvim"
+export SUDO_EDITOR="$EDITOR"
+
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
