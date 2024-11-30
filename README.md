@@ -1,4 +1,10 @@
+
 # Setup Instructions
+
+![2024-11-30-160053_hyprshot](https://github.com/user-attachments/assets/752a6572-ab0c-4b98-ab82-37546c407ed0)
+
+![2024-11-30-160319_hyprshot](https://github.com/user-attachments/assets/c2a715d8-5823-437b-bd6a-cea5085d143e)
+
 
 ## 1. Install required apps:
 sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle hyprlock warp-terminal wofi nvim \
