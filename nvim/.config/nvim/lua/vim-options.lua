@@ -5,6 +5,8 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 
 vim.opt.swapfile = false
+vim.opt.guifont = "JetBrains Mono NL Font:h16"
+vim.opt.statusline = "%f %y %m %= %l,%c %p%%"
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
