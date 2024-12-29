@@ -1,8 +1,9 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
+
 vim.cmd("set shiftwidth=2")
+
 vim.g.mapleader = " "
+vim.g.loaded_netrw       = 1
+vim.g.loaded_netrwPlugin = 1
 
 vim.opt.swapfile = false
 vim.opt.guifont = "JetBrains Mono NL Font:h16"
@@ -14,5 +15,7 @@ vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+-- NeoTree
+vim.keymap.set("n", '<C-n>', ':Neotree filesystem reveal toggle left<CR>')
+
 vim.wo.number = true
