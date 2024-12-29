@@ -28,13 +28,15 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 # Start ssh-agent if not already running
-if [ -z "$SSH_AUTH_SOCK" ] || ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    eval "$(ssh-agent -s)" >/dev/null 2>&1
+if ! ps -ef | grep "ssh-agent" &>/dev/null; then
+    echo Starting SSH Agent
+    eval $(ssh-agent -s)
 fi
 
-# Add the SSH key if it's not already added
-if [ -f ~/.ssh/id_personal ]; then
-    ssh-add -l | grep -q "$(ssh-keygen -lf ~/.ssh/id_personal.pub | awk '{print $2}')" || ssh-add ~/.ssh/id_personal >/dev/null 2>&1
+# Add default SSH key if not already added
+if ! ssh-add -l &>/dev/null; then
+    echo Adding keys..
+    if [ -f "~/.ssh/personal" ]; then
+        ssh-add "~/.ssh/personal" &>/dev/null
+    fi
 fi
-
-unset rc
