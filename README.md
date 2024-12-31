@@ -24,9 +24,9 @@ flatpak install flathub com.skype.Client \
 flatpak install flathub io.github.pwr_solaar.solaar \
 flatpak install flathub org.onlyoffice.desktopeditors
 
-Download and install: Ubuntu Nerd Fonts pack: \
+Download and install: Ubuntu Nerd Fonts pack:
 
-https://www.nerdfonts.com/font-downloads \
+https://www.nerdfonts.com/font-downloads
 
 ## 2. Generate personal ssh-key and add it to the Github account:
 ssh-keygen -t ed25519 -C "chekhovych1995@gmail.com" \
