@@ -9,7 +9,7 @@
 
 ## 1. Install required apps:
 
-`sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle hyprlock hyprshot warp-terminal wofi nvim`
+`sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle hyprlock hyprshot warp-terminal wofi nvim pipewire wireplumber qt6-qtwayland`
 
 <b>Google Chrome:</b>
 
