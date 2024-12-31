@@ -15,6 +15,14 @@ flatpak install flathub org.telegram.desktop \
 flatpak install flathub com.viber.Viber \
 flatpak install flathub com.vscodium.codium \
 flatpak install flathub com.slack.Slack \
+flatpak install flathub org.mozilla.Thunderbird \
+flatpak install flathub com.mattjakeman.ExtensionManager \
+flatpak install flathub com.github.tchx84.Flatseal \
+flatpak install flathub com.bitwarden.desktop \
+flatpak install flathub com.getpostman.Postman \
+flatpak install flathub com.skype.Client \
+flatpak install flathub io.github.pwr_solaar.solaar \
+flatpak install flathub org.onlyoffice.desktopeditors
 
 Download and install: Ubuntu Nerd Fonts pack: \
 
