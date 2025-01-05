@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
@@ -24,15 +24,20 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 
-# Start ssh-agent if not already running
-if ! ps -ef | grep "ssh-agent" &>/dev/null; then 
-    eval $(ssh-agent -s)
+# Ensure keychain is installed
+if ! command -v keychain &>/dev/null; then
+    echo keychain is not installed! sudo dnf5 install keychain
+    exit 1
 fi
 
-# Add default SSH key if not already added
+# Start keychain and add default SSH keys
+eval $(keychain --eval --agents ssh)
+
+# Check if default key is already added
 if ! ssh-add -l &>/dev/null; then
-    echo Adding keys..
-    if [ -f "~/.ssh/personal" ]; then
-        ssh-add "~/.ssh/personal" &>/dev/null
+    if [ -f "$HOME/.ssh/personal" ]; then
+       ssh-add "$HOME/.ssh/personal" &>/dev/null
+    else
+        echo "Default SSH key not found: $HOME/.ssh/personal"
     fi
 fi

@@ -1,15 +1,12 @@
-
 # Setup Instructions
 
 ![2024-11-30-160905_hyprshot](https://github.com/user-attachments/assets/525d6004-a27f-41de-baf3-c961bb1d36f1)
 
-
 ![2024-11-30-160319_hyprshot](https://github.com/user-attachments/assets/c2a715d8-5823-437b-bd6a-cea5085d143e)
-
 
 ## 1. Install required apps:
 
-`sudo dnf5 install -y git stow cliphist swaync waybar hyprpaper hypridle hyprlock hyprshot warp-terminal wofi nvim pipewire wireplumber qt6-qtwayland`
+`sudo dnf5 install -y git stow keychain cliphist swaync waybar hyprpaper hypridle hyprlock hyprshot warp-terminal wofi nvim pipewire wireplumber qt6-qtwayland`
 
 <b>Google Chrome:</b>
 
@@ -79,7 +76,7 @@ Double check id_personal.pub file existance in ~/.ssh folder.
 
 ## 4. Bash changes:
 
-rm -rf ~/.bashrc 
+rm -rf ~/.bashrc
 cd ~/Dotfiles \
 stow bashrc
 
