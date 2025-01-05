@@ -15,8 +15,6 @@ export PATH
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
     for rc in ~/.bashrc.d/*; do
@@ -27,8 +25,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 # Start ssh-agent if not already running
-if ! ps -ef | grep "ssh-agent" &>/dev/null; then
-    echo Starting SSH Agent
+if ! ps -ef | grep "ssh-agent" &>/dev/null; then 
     eval $(ssh-agent -s)
 fi
 
