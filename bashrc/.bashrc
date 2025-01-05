@@ -24,14 +24,8 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 
-# Ensure keychain is installed
-if ! command -v keychain &>/dev/null; then
-    echo keychain is not installed! sudo dnf5 install keychain
-    exit 1
-fi
-
-# Start keychain and add default SSH keys
-eval $(keychain --eval --agents ssh)
+# Start keychain and add default SSH keys (suppress output)
+eval $(keychain --eval --agents ssh 2>/dev/null) &>/dev/null
 
 # Check if default key is already added
 if ! ssh-add -l &>/dev/null; then
