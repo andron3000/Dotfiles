@@ -10,7 +10,7 @@
 
 <b>Google Chrome:</b>
 
-`flatpak install flathub com.google.Chrome`
+`flatpak install flathub com.google.Chrome` + enable wayland only mode
 
 <b>Telegram:</b>
 
@@ -22,7 +22,7 @@
 
 <b>VSCodium:</b>
 
-`flatpak install flathub com.vscodium.codium`
+`flatpak install flathub com.vscodium.codium` + enable wayland only mode
 
 <b>Slack:</b>
 
