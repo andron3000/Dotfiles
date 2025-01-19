@@ -1,0 +1,71 @@
+* {
+	background-image: none;
+}
+
+window {
+	font-family: "JetBrains Mono", monospace;
+	font-size: 12px;
+	background-color: rgba(15, 5, 5, 0.7);
+}
+
+button {
+	min-width: 120px;
+	color: #e5e5e5;
+	background-color: rgb(59, 97, 94);
+	outline-style: none;
+	border: none;
+	border-width: 0px;
+	margin: 40px 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0;
+	box-shadow: 0 10px rgba(55, 15, 15, 1);
+	text-shadow: none;
+	animation: gradient_f 20s ease-in infinite;
+	transition: all 0.3s ease-in-out;
+	border-radius: 0;
+	text-decoration-color: #cdd6f4;
+	color: #cdd6f4;
+	background-color: #181825;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+	background-size: 30%;
+}
+
+#lock {
+	background-image: url("./icons/lock_white.png");
+}
+
+#shutdown {
+	background-image: url("./icons/shutdown_white.png");
+}
+
+#reboot {
+	background-image: url("./icons/reboot_white.png");
+}
+
+button:hover {
+	margin: 0;
+	border-radius: 50px;
+	transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+	background-size: 30%;
+}
+
+button:hover#lock {
+	border-radius: 50px;
+	background-color: #4d4b4b;
+	box-shadow: 0 10px rgba(46, 45, 45, 1);
+}
+
+button:hover#shutdown {
+	background-color: #c01212;
+	box-shadow: 0 10px rgba(105, 10, 10, 1);
+}
+
+button:hover#reboot {
+	border-radius: 50px;
+	background-color: #218529;
+	box-shadow: 0 10px rgba(17, 66, 21, 1);
+}
