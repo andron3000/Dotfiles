@@ -24,6 +24,12 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 
+## source it from ~/.bashrc or ~/.bash_profile ##
+echo "source /etc/profile.d/bash_completion.sh" >> ~/.bashrc
+ 
+## Another example Check and load it from ~/.bashrc or ~/.bash_profile ##
+grep -wq '^source /etc/profile.d/bash_completion.sh' ~/.bashrc || echo 'source /etc/profile.d/bash_completion.sh'>>~/.bashrc
+
 # Start keychain and add default SSH keys (suppress output)
 eval $(keychain --eval --agents ssh 2>/dev/null) &>/dev/null
 
@@ -35,3 +41,4 @@ if ! ssh-add -l &>/dev/null; then
         echo "Default SSH key not found: $HOME/.ssh/personal"
     fi
 fi
+
